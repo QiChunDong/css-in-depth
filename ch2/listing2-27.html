@@ -1,0 +1,60 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    :root {
+      --main-bg: #fff;
+      --main-color: #000;
+    }
+
+    .panel {
+      font-size: 1rem;
+      padding: 1em;
+      border-radius: .5em;
+      margin-top: .5em;
+      border: 1px solid #999;
+      background-color: var(--main-bg);
+      color: var(--main-color);
+    }
+
+    .panel > h2 {
+      margin-top: 0;
+      font-size: .8em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .dark {
+      margin-top: 2em;
+      padding: 1em;
+      background-color: #999;
+      --main-bg: #000;
+      --main-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="panel">
+    <h2>Single-oringin</h2>
+    <div class="panel-body">
+      We have built parterships with small farms around the world to 
+      handle-select beans at the peak of ripeness.
+      <a href="/batch-size">small batches</a> tomaximize
+      taste and health.
+    </div>
+  </div>
+
+  <div class="dark">
+    <div class="panel">
+      <h2>Single-oringin</h2>
+      <div class="panel-body">
+        We have built parterships with small farms around the world to 
+        handle-select beans at the peak of ripeness.
+        <a href="/batch-size">small batches</a> tomaximize
+        taste and health.
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,64 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    /* 根元素设置14px  14/16 = 0.875 */
+    :root {
+      font-size: .75em;
+    }
+
+    @media (min-width: 800px) {
+      :root {
+        font-size: .875em;
+      }
+    }
+    @media (min-width: 1200px) {
+      :root {
+        font-size: 1em;
+      }
+    }
+
+
+    .panel {
+      font-size: 1rem;
+      padding: 1em;
+      border-radius: .5em;
+      margin-top: .5em;
+      border: 1px solid #999;
+    }
+
+    .panel > h2 {
+      margin-top: 0;
+      font-size: .8em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .large {
+      font-size: 1.25em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="panel">
+    <h2>Single-oringin</h2>
+    <div class="panel-body">
+      We have built parterships with small farms around the world to 
+      handle-select beans at the peak of ripeness.
+      <a href="/batch-size">small batches</a> tomaximize
+      taste and health.
+    </div>
+  </div>
+
+  <div class="panel large">
+    <h2>Single-oringin</h2>
+    <div class="panel-body">
+      We have built parterships with small farms around the world to 
+      handle-select beans at the peak of ripeness.
+      <a href="/batch-size">small batches</a> tomaximize
+      taste and health.
+    </div>
+  </div>
+</body>
