@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+    /* 设置全局的盒模型，所有元素都继承这个盒模型 */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+
+header  {
+    background-color: #0072b0;
+    color: #fff;
+    border-radius: .5em;
+}
+
+.wrap {
+    margin: 0 -1.5em;
+}
+
+.container {
+    display: table;
+    width: 100%;
+    border-spacing: 1.5em 0;
+}
+
+.main {
+    display: table-cell;
+    width: 70%;
+    background-color: #fff;
+    border-radius: .5em;
+}
+
+.sidebar {
+    display: table-cell;
+    width: 30%;
+    margin-left: 1.5em;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: .5em;
+}
