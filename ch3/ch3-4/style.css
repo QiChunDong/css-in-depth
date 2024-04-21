@@ -16,17 +16,25 @@ header  {
     border-radius: .5em;
 }
 
+.wrap {
+    margin: 0 -1.5em;
+}
+
 .container {
-    display: flex;
+    display: table;
+    width: 100%;
+    border-spacing: 1.5em 0;
 }
 
 .main {
+    display: table-cell;
     width: 70%;
     background-color: #fff;
     border-radius: .5em;
 }
 
 .sidebar {
+    display: table-cell;
     width: 30%;
     margin-left: 1.5em;
     padding: 1.5em;
