@@ -1,8 +1,12 @@
+:root {
+    box-sizing: border-box;
+}
+
 *,
 ::before,
 ::after {
     /* 设置全局的盒模型，所有元素都继承这个盒模型 */
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
@@ -16,28 +20,42 @@ header  {
     border-radius: .5em;
 }
 
-.wrap {
-    margin: 0 -1.5em;
-}
-
 .container {
-    display: table;
-    width: 100%;
-    border-spacing: 1.5em 0;
+    display: flex;
 }
 
 .main {
-    display: table-cell;
     width: 70%;
     background-color: #fff;
     border-radius: .5em;
+    height: 500px;
+    padding: 1em 1.5em;
 }
 
 .sidebar {
-    display: table-cell;
     width: 30%;
     margin-left: 1.5em;
     padding: 1.5em;
     background-color: #fff;
     border-radius: .5em;
+    margin-top: 0;
+}
+
+.button-link {
+    display: block;
+    padding: 0.5em;
+    color: #fff;
+    background: #00909c;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+/* .button-link + .button-link {
+    margin-top: 1.5em;
+} */
+
+/* 全局的猫头鹰选择器 */
+body * + * {
+    margin-top: 1.5em;
 }

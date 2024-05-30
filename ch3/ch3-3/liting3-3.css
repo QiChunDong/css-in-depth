@@ -1,8 +1,12 @@
+:root {
+    box-sizing: border-box;
+}
+
 *,
 ::before,
 ::after {
     /* 设置全局的盒模型，所有元素都继承这个盒模型 */
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
